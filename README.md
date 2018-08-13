@@ -28,3 +28,4 @@ Thank you for all of your information and effort.
 
 - https://enomotodev.hatenablog.com/entry/2017/10/07/131118
 - https://enomotodev.hatenablog.com/entry/2017/10/08/122522
+- https://enomotodev.hatenablog.com/entry/2017/10/09/105202
