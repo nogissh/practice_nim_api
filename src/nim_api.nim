@@ -2,7 +2,7 @@ import jester, asyncdispatch, json, db_mysql
 
 
 # set db
-let db = open("192.168.1.15", "root", "hogehoge", "nim_api")
+let db = open("your_ip_address", "root", "hogehoge", "nim_api")
 
 # router
 routes:
