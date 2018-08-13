@@ -36,6 +36,28 @@ routes:
 
     resp $data, "application/json"
 
+
+  # registration information of new user
+  post "/users":
+
+    # data from form
+    var params = request.formData
+
+    # set data
+    var name = params["name"].body
+
+    # insert and get id
+    var id = db.tryInsertId(sql"INSERT INTO memberlist(name) VALUES(?)", name)
+
+    # set to data
+    var data = %*{
+      "id": id,
+      "name": name,
+    }
+
+    resp $data, "application/json"
+
+
   # information of a user
   get "/users/@username":
 
@@ -50,5 +72,6 @@ routes:
       "age": row[3],
     }
     resp $data, "application/json"
+
 
 runForever()
