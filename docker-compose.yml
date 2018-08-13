@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  mysql-server:
+    container_name: mysql-server
+    image: mysql:8.0.0
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: hoge
+      MYSQL_DATABASE: nim_api
